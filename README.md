@@ -7,8 +7,8 @@
 - Gustavo
 - Marcia
 - Isabella
-- 
-- 
+- Christopher
+- Anderson
 -- 
 
 - Vanessa
