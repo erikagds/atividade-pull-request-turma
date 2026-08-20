@@ -4,12 +4,17 @@
 ## Alunos
 
 
+
+
+- Eloisa
+- Ana
 - Gustavo
 - Marcia
 - Isabella
 - 
 - 
 -- 
+
 
 - Vanessa
 -Luan 
