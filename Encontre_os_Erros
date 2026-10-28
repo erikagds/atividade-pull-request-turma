@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,7 +8,7 @@
     <h1>Cadastro de Alunos</h1>
 
     <input id="nome" placeholder="Digite seu nome">
-    <input id="idade" placeholder="Digite sua idade">
+    <input id="idade" type="number" placeholder="Digite sua idade">
 
     <button onclick="cadastrar()">Cadastrar</button>
 
@@ -17,15 +16,17 @@
 
     <script>
         function cadastrar() {
-            let nome = document.getElementById("nome").value;
+            let nome = document.getElementById("nome").value.trim();
             let idade = document.getElementById("idade").value;
 
-            if (nome = "") {
+            if (nome === "") {
                 alert("Digite seu nome!");
+                return;
             }
 
-            if (idade < 0) {
+            if (idade === "" || Number(idade) < 0) {
                 alert("Idade inválida!");
+                return;
             }
 
             document.getElementById("mensagem").innerHTML =
