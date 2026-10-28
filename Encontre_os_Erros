@@ -1,39 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Cadastro de Alunos</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Cadastro de Alunos</h1>
 
-    <input id="nome" placeholder="Digite seu nome">
-    <input id="idade" placeholder="Digite sua idade">
+    <input id="nome" placeholder="Digite seu nome" />
+
+    <input id="idade" placeholder="Digite sua idade" />
 
     <button onclick="cadastrar()">Cadastrar</button>
 
     <p id="mensagem"></p>
 
     <script>
-        function cadastrar() {
-            let nome = document.getElementById("nome").value;
-            let idade = document.getElementById("idade").value;
+      function cadastrar() {
+        let nome = document.getElementById("nome").value;
+        let idade = document.getElementById("idade").value;
 
-            if (nome = "") {
-                alert("Digite seu nome!");
-            }
-
-            if (idade < 0) {
-                alert("Idade inválida!");
-            }
-
-            document.getElementById("mensagem").innerHTML =
-                "Aluno cadastrado: " + nome +
-                " | Idade: " + idade;
-
-            console.log("Cadastro realizado");
+        if (nome == "") {
+          alert("Digite seu nome!");
         }
+
+        if (idade <= 0) {
+          alert("Idade inválida!");
+        }
+        
+        document.getElementById("mensagem").innerHTML =
+          "Aluno cadastrado: " + nome + " | Idade: " + idade;
+
+        console.log("Cadastro realizado");
+      }
     </script>
-</body>
+  </body>
 </html>
+
+
